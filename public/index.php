@@ -9,9 +9,6 @@ define('APP', dirname(__DIR__) . '/app');
 
 require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
-/*require '../app/controllers/Main.php';
-require '../app/controllers/Posts.php';
-require '../app/controllers/PostsNew.php';*/
 
 spl_autoload_register (function ($class)
 {
