@@ -3,5 +3,8 @@
 
 class Main
 {
+    public function indexAction ()
+    {
 
+    }
 }
