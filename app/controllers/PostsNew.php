@@ -6,7 +6,7 @@ class PostsNew
 {
     public function indexAction ()
     {
-
+        echo 'postNew';
     }
 
     public function before ()

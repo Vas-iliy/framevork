@@ -8,6 +8,6 @@ class Posts
 
     public function indexAction ()
     {
-
+        echo 'post';
     }
 }
