@@ -76,7 +76,6 @@ class Router {
     {
         if (self::matchRoute($url)) {
             $controller = 'app\controllers\\' . self::upperCamelCase(self::$route['controller']);
-            echo $controller;
             if (class_exists($controller)) {
                 $cObj = new $controller;
                 $action = self::lowerCamelCase(self::$route['action']) . 'Action';
