@@ -90,7 +90,7 @@ class Router {
             }
         } else {
             http_response_code(404);
-            include '404.html';
+            include 'e_404.html';
         }
     }
 
