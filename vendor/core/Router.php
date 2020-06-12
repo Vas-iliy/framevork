@@ -96,16 +96,31 @@ class Router {
         }
     }
 
+    /**
+     * преобразует имена к виду CamelCase
+     * @param string $name строка для преобразования
+     * @return string
+     */
     protected static function upperCamelCase ($name)
     {
         return str_replace(' ', '', ucwords(str_replace('-', ' ', $name)));
     }
 
+    /**
+     * преобразует имена к виду CamelCase
+     * @param string $name строка для преобразования
+     * @return string
+     */
     protected static function lowerCamelCase ($name)
     {
         return lcfirst(self::upperCamelCase($name));
     }
-    
+
+    /**
+     * разделяет URL по &
+     * возвращает неявный гет-параметр
+     * @return string
+     */
     protected static function removeQueryString ($url)
     {
         if ($url) {

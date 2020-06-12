@@ -37,6 +37,11 @@ class View
         $this->view = $view;
     }
 
+    /**
+     * находит нужный шаблон
+     * находит нужный вид
+     * @var string
+     */
     public function render ($params)
     {
         if (is_array($params))
