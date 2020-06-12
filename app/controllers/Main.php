@@ -8,7 +8,8 @@ class Main extends App
 
     public function indexAction ()
     {
+        //$this->layout = false;
 //        $this->layout = 'main';
-//        $this->view = 'test';
+        $this->view = 'test';
     }
 }
