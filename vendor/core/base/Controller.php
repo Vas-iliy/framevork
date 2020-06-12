@@ -22,6 +22,12 @@ abstract class Controller
      */
     public $layout;
 
+    /*
+     * пользовательские данные
+     * @var array
+     */
+    public $params;
+
     public function __construct($route)
     {
         $this->route = $route;
@@ -31,7 +37,12 @@ abstract class Controller
     public function getView ()
     {
         $vObj = new View($this->route, $this->layout, $this->view);
-        $vObj->render();
+        $vObj->render($this->params);
+    }
+
+    public function set ($params)
+    {
+        $this->params = $params;
     }
 
 }

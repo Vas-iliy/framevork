@@ -1,1 +1,4 @@
-test
+
+<?=$name?>
+<br>
+<?=$earn?>

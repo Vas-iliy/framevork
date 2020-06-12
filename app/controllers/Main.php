@@ -10,6 +10,9 @@ class Main extends App
     {
         //$this->layout = false;
 //        $this->layout = 'main';
-        $this->view = 'test';
+        //$this->view = 'test';
+        $name = 'Вася';
+        $earn = '10000$';
+        $this->set(compact('name', 'earn'));
     }
 }
