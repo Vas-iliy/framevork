@@ -42,7 +42,7 @@ class View
         }
         $content = ob_get_clean();
 
-        $file_layout = APP . "views/layouts/{$this->layout}.php";
+        $file_layout = APP . "/views/layouts/{$this->layout}.php";
         if (is_file($file_layout)) {
             require $file_layout;
         } else {
