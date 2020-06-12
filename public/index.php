@@ -10,8 +10,8 @@ define('WWW', __DIR__);
 define('CORE', dirname(__DIR__) . '/vendor/core');
 define('ROOT', dirname(__DIR__));
 define('APP', dirname(__DIR__) . '/app');
+define('LAYOUT', 'default');
 
-require '../vendor/core/Router.php';
 require '../vendor/libs/functions.php';
 
 spl_autoload_register (function ($class)
