@@ -10,7 +10,5 @@ class Page extends Controller
 {
     public function viewAction ()
     {
-        debug($this->route);
-        echo 'Page:view';
     }
 }

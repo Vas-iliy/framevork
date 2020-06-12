@@ -9,6 +9,5 @@ class Posts extends Controller
 
     public function indexAction ()
     {
-        echo 'post';
     }
 }
