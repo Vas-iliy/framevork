@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeb387e3-5ac4-423e-9d68-088527ac0d99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/Main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/config_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/core/Db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/core/base/Model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/core/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/core/e_404.html" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/core/errors/e_404.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,30 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,6 +60,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -78,7 +104,7 @@
       <workItem from="1591644124292" duration="12681000" />
       <workItem from="1591896918234" duration="7610000" />
       <workItem from="1591992632598" duration="6987000" />
-      <workItem from="1592161148367" duration="633000" />
+      <workItem from="1592161148367" duration="2380000" />
     </task>
     <servers />
   </component>
