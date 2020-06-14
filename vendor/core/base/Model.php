@@ -6,7 +6,8 @@ namespace vendor\core\base;
 
 use vendor\core\Db;
 
-abstract class Model {
+abstract class Model
+{
 	protected $pdo;
 	protected $table;
 
