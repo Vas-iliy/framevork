@@ -6,16 +6,18 @@ use app\models\Main;
 
 class MainController extends AppController
 {
-   // public $layout = 'main';
+    public $layout = 'main';
 
     public function indexAction ()
     {
 	    $model = new Main();
+		$posts = $model->findAll();
+        $title = 'PAGE TITLE';
+        $this->set(compact('title', 'posts'));
+    }
 
-        $name = 'Вася';
-        $earn = '10000$';
-        $this->set(compact('name', 'earn'));
-
+    public function testAction ()
+    {
 
     }
 }
