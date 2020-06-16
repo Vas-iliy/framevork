@@ -11,6 +11,7 @@ define('CORE', dirname(__DIR__) . '/vendor/core');
 define('ROOT', dirname(__DIR__));
 define('APP', dirname(__DIR__) . '/app');
 define('LAYOUT', 'default');
+define('LIBS', dirname(__DIR__) . '/vendor/libs');
 
 require '../vendor/libs/functions.php';
 

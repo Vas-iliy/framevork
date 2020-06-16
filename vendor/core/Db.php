@@ -3,6 +3,7 @@
 
 namespace vendor\core;
 
+use R;
 
 class Db
 {
@@ -11,12 +12,16 @@ class Db
 
 	protected function __construct ()
 	{
+		require LIBS . '/rb.php';
 		$db = require ROOT . '/config/config_db.php';
 		$options = [
 			\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
 			\PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_ASSOC
 		];
-		$this->pdo = new \PDO($db['dsn'], $db['user'], $db['pass'], $options);
+		R::setup($db['dsn'], $db['user'], $db['pass'], $options);
+		R::freeze(true);//не позволяет динамически изменять тип столбцов
+		//R::fancyDebug(TRUE);//включаем дебагер Redbean
+		//$this->pdo = new \PDO($db['dsn'], $db['user'], $db['pass'], $options);
 
 	}
 
