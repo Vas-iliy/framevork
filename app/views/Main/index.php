@@ -1,9 +1,8 @@
 <div class="container">
-    <ul class="nav nav-pills">
         <?foreach ($menu as $item):?>
-            <li><a href="category/<?=$item['id']?>"><?=$item['title']?></a></li>
+            <a class="nav-link active" href="category/<?=$item['id']?>"><?=$item['title']?></a>
         <?endforeach;?>
-    </ul>
+
 	<? if (!empty($posts)):?>
 		<?foreach ($posts as $post):?>
 			<div class="panel panel-default">
