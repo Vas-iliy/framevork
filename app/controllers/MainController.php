@@ -7,13 +7,13 @@ use R;
 
 class MainController extends AppController
 {
-    public $layout = 'main';
+    public $layout = 'default';
 
     public function indexAction ()
     {
 	    $model = new Main();
 	    $posts = R::findAll('posts');
-	    $menu = R::findAll('category');
+	    $menu = $this->menu;
 	    $title = 'PAGE TITLE';
 	    $this->set(compact('title', 'posts', 'menu'));
 		/*//$posts = $model->findAll();
