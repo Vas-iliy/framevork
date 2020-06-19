@@ -12,9 +12,11 @@
 
 <body>
 <div class="container">
+    <?if(!empty($menu)):?>
 	<?foreach ($menu as $item):?>
         <a class="nav-link active" href="category/<?=$item['id']?>"><?=$item['title']?></a>
 	<?endforeach;?>
+    <?endif;?>
     <h1>Hello, world!</h1>
 
     <?=$content?>

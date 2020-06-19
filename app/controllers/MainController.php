@@ -7,7 +7,7 @@ use R;
 
 class MainController extends AppController
 {
-    public $layout = 'default';
+    //public $layout = 'default';
 
     public function indexAction ()
     {
@@ -27,6 +27,7 @@ class MainController extends AppController
 
     public function testAction ()
     {
+		$this->layout = 'test';
 
     }
 }
