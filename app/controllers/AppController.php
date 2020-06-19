@@ -18,6 +18,12 @@ class AppController extends Controller
 		$this->menu = \R::findAll('category');
 	}
 
+	/**
+	 * Заполняем метаданные различных страниц
+	 * @param string $title
+	 * @param string $desc
+	 * @param string $keywords
+	 */
 	protected function setMeta ($title = '', $desc = '', $keywords = '')
 	{
 		$this->meta['title'] = $title;

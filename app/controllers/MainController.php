@@ -9,6 +9,9 @@ class MainController extends AppController
 {
     //public $layout = 'main';
 
+	/**
+	 * Страница индекс
+	 */
     public function indexAction ()
     {
 	    $model = new Main();
@@ -27,6 +30,9 @@ class MainController extends AppController
         $this->set(compact('title', 'posts'));*/
     }
 
+	/**
+	 * Страница тест
+	 */
     public function testAction ()
     {
 		$this->layout = 'test';
