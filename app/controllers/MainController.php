@@ -7,7 +7,7 @@ use R;
 
 class MainController extends AppController
 {
-    //public $layout = 'default';
+    //public $layout = 'main';
 
     public function indexAction ()
     {
@@ -15,7 +15,9 @@ class MainController extends AppController
 	    $posts = R::findAll('posts');
 	    $menu = $this->menu;
 	    $title = 'PAGE TITLE';
-	    $this->set(compact('title', 'posts', 'menu'));
+	    $this->setMeta('Главная страница', 'Описание страницы', 'Ключевые слова');
+	    $meta = $this->meta;
+	    $this->set(compact('title', 'posts', 'menu', 'meta'));
 		/*//$posts = $model->findAll();
 		//$post = $model->findOne(1);
 	    //$data = $model->findBySql("SELECT * FROM {$model->table} ORDER BY id DESC ");
@@ -28,6 +30,5 @@ class MainController extends AppController
     public function testAction ()
     {
 		$this->layout = 'test';
-
     }
 }
